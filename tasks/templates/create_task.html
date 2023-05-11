@@ -2,6 +2,7 @@
 
 {% block content %}
 <h1>Created Task</h1>
+{{error}}
 <form action="/tasks/create/" method="post">
     {% csrf_token %}
     {{form.as_div}}
